@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment/API keys
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local uploaded/generated CAD files
+input/*
+output/*
+
+# Keep directory structure
+!input/.gitkeep
+!output/.gitkeep
+
+# Large CAD/mesh files
+*.stl
+*.STL
+*.step
+*.STEP
+*.stp
+*.STP
+*.iges
+*.IGES
+*.igs
+*.IGS
+
+# Python notebooks/checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
