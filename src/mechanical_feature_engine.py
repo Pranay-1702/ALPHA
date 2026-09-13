@@ -9,7 +9,7 @@ from scipy.sparse.csgraph import connected_components
 
 
 # ============================================================
-# OX ALPHA
+# ALPHA
 # MECHANICAL FEATURE RECOGNITION ENGINE - STAGE 1
 #
 # This replaces the experimental "random cylinder" approach.
@@ -160,8 +160,8 @@ def load_and_clean_mesh(path):
     # stores each triangle with duplicated vertex records.
     mesh.merge_vertices()
 
-    mesh.remove_degenerate_faces()
-    mesh.remove_duplicate_faces()
+    mesh.update_faces(mesh.nondegenerate_faces())
+    mesh.update_faces(mesh.unique_faces())
 
     print(
         f"[OK] Clean triangles: {len(mesh.faces):,}"
@@ -1392,7 +1392,7 @@ def save_results(
     )
 
     output = {
-        "system": "OX ALPHA",
+        "system": "ALPHA",
         "engine": "Mechanical Feature Recognition Engine",
         "stage": 1,
         "source_stl": str(stl_path),
@@ -1468,7 +1468,7 @@ def print_results(cylinders):
     print("\n")
     print("=" * 78)
     print(
-        "OX ALPHA - MECHANICAL CYLINDER EVIDENCE"
+        "ALPHA - MECHANICAL CYLINDER EVIDENCE"
     )
     print("=" * 78)
 
@@ -1569,7 +1569,7 @@ def print_results(cylinders):
 def main():
     print("=" * 78)
     print(
-        "OX ALPHA - MECHANICAL FEATURE RECOGNITION ENGINE"
+        "ALPHA - MECHANICAL FEATURE RECOGNITION ENGINE"
     )
     print(
         "STAGE 1: SURFACE REGIONS + CYLINDRICAL EVIDENCE"

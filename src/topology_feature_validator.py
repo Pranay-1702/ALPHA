@@ -6,7 +6,7 @@ import trimesh
 
 
 # ============================================================
-# OX ALPHA - STAGE 5C
+# ALPHA - STAGE 5C
 # TOPOLOGY FEATURE VALIDATOR
 # ============================================================
 
@@ -754,7 +754,7 @@ def load_mesh():
 
     try:
 
-        mesh.remove_degenerate_faces()
+        mesh.update_faces(mesh.nondegenerate_faces())
 
     except Exception:
 
@@ -762,7 +762,7 @@ def load_mesh():
 
     try:
 
-        mesh.remove_duplicate_faces()
+        mesh.update_faces(mesh.unique_faces())
 
     except Exception:
 
@@ -1771,7 +1771,7 @@ def main():
 
     print()
     print("=" * 72)
-    print("OX ALPHA - STAGE 5C")
+    print("ALPHA - STAGE 5C")
     print("TOPOLOGY FEATURE VALIDATOR")
     print("=" * 72)
 

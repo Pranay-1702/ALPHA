@@ -7,7 +7,7 @@ import trimesh
 
 
 # ============================================================
-# OX ALPHA
+# ALPHA
 # STAGE 5B
 # LOCAL OPENING / BOTTOM / DEPTH ANALYSIS
 #
@@ -381,7 +381,7 @@ def extract_section_loops(
 
     try:
 
-        planar, _ = section.to_planar()
+        planar, _ = section.to_2D()
 
     except Exception:
 
@@ -1412,7 +1412,7 @@ def main():
     print("=" * 78)
 
     print(
-        "OX ALPHA - STAGE 5B"
+        "ALPHA - STAGE 5B"
     )
 
     print(
@@ -1546,7 +1546,7 @@ def main():
         output = {
 
             "system":
-                "OX ALPHA",
+                "ALPHA",
 
             "stage":
                 "5B",

@@ -7,7 +7,7 @@ import trimesh
 
 
 # ============================================================
-# OX ALPHA
+# ALPHA
 # STAGE 5 - HOLE TERMINATION / DEPTH ANALYSIS
 #
 # Purpose:
@@ -1584,7 +1584,7 @@ def main():
     print("=" * 78)
 
     print(
-        "OX ALPHA - STAGE 5"
+        "ALPHA - STAGE 5"
     )
 
     print(
@@ -1710,7 +1710,7 @@ def main():
         output = {
 
             "system":
-                "OX ALPHA",
+                "ALPHA",
 
             "stage":
                 "5",

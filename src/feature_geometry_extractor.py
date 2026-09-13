@@ -7,7 +7,7 @@ import trimesh
 
 
 # ============================================================
-# OX ALPHA
+# ALPHA
 # STAGE 3 - COMPLETE FEATURE GEOMETRY EXTRACTION
 #
 # Purpose:
@@ -226,9 +226,9 @@ def load_mesh(path):
 
     mesh.merge_vertices()
 
-    mesh.remove_degenerate_faces()
+    mesh.update_faces(mesh.nondegenerate_faces())
 
-    mesh.remove_duplicate_faces()
+    mesh.update_faces(mesh.unique_faces())
 
     mesh.remove_unreferenced_vertices()
 
@@ -1564,7 +1564,7 @@ def build_output(
     output = {
 
         "system":
-            "OX ALPHA",
+            "ALPHA",
 
         "stage":
             3,
@@ -1662,7 +1662,7 @@ def print_summary(output):
     print("\n")
     print("=" * 78)
     print(
-        "OX ALPHA - STAGE 3 FEATURE GEOMETRY SUMMARY"
+        "ALPHA - STAGE 3 FEATURE GEOMETRY SUMMARY"
     )
     print("=" * 78)
 
@@ -1812,7 +1812,7 @@ def main():
 
     print("=" * 78)
     print(
-        "OX ALPHA - STAGE 3"
+        "ALPHA - STAGE 3"
     )
 
     print(

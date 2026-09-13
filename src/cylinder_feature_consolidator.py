@@ -6,7 +6,7 @@ import numpy as np
 
 
 # ============================================================
-# OX ALPHA
+# ALPHA
 # STAGE 3B - PHYSICAL AXIS / LOCATION CONSOLIDATION
 #
 # Purpose:
@@ -2175,7 +2175,7 @@ def print_results(
     print("=" * 78)
 
     print(
-        "OX ALPHA - STAGE 3B RESULT"
+        "ALPHA - STAGE 3B RESULT"
     )
 
     print(
@@ -2330,7 +2330,7 @@ def main():
     print("=" * 78)
 
     print(
-        "OX ALPHA - STAGE 3B"
+        "ALPHA - STAGE 3B"
     )
 
     print(
@@ -2432,7 +2432,7 @@ def main():
         output = {
 
             "system":
-                "OX ALPHA",
+                "ALPHA",
 
             "stage":
                 "3B",
